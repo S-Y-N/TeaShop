@@ -1,0 +1,27 @@
+.prioritise {
+    margin-bottom: 150px;
+}
+
+.prior__cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 48px;
+}
+.prior__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.prior__title {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.prior__text {
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-size: 18px;
+    text-align: center;
+    white-space:nowrap;
+}

@@ -1,0 +1,58 @@
+.know-more {
+    background-color: $lightBackground;
+    background-image: url(./../img/tea_bg.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right center;
+    margin-bottom: 150px;
+}
+.know-more__content {
+    padding: 100px 0;
+}
+
+.know-mote__blocks {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+.know-more--text {
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.form__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.email_input {
+    border-bottom:1px solid $lightGreen ;
+    width: 100%;
+    margin-top: 20px;
+
+}
+.email_input::placeholder{
+    padding-left: 15px;
+    color: $lightGreen;
+}
+.submit_btn {
+    margin-left: 25px;
+    background-color: white;
+    padding: 12px 40px;
+    border: 1px solid black;
+}
+.form__check {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.cbx {
+    margin-top: 4px;
+    width: 16px;
+    height: 16px;
+}
+.check--text {
+    font-size: 13px;
+    font-weight: 300;
+}
