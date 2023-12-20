@@ -1,16 +1,54 @@
 .clients {
-    //opacity: 0.5;
     background: $lightBackground;
     margin-bottom: 150px;
+    @include mediaTablet{
+        margin-bottom: 120px;
+    }
+     @include mediaTablet{
+        margin-bottom: 60px;
+    }
+    @include mediaMobile{
+        margin-bottom: 50px;
+    }
 }
 .client__content{
     min-height: 400px;
     padding: 60px 0;
+    @include mediaMobile{
+        padding: 50px 0;
+    }
 }
 .clients__cards {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 26px;
+    @include mediaTablet{
+        grid-template-columns: repeat(3,1fr);
+    }
+    @include mediaTabletS{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px 76px;
+    }
+    @include mediaMobileS{
+        grid-template-columns:1fr;
+        gap: 30px;
+    }
+    @include mediaMobile{
+        gap: 25px 50px;
+    }
+}
+.client__card:last-child{
+    @include mediaTablet{
+        display: none;
+    }
+    @include mediaTabletS{
+       display: block;
+    } 
+}
+.client__card:nth-child(even){
+    @include mediaMobileS{
+        display: none;
+     } 
 }
 .client__card--text {
     margin-bottom: 10px;

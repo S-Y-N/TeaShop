@@ -1,15 +1,28 @@
+//960px
 @mixin mediaTablet {
     @media screen and (max-width: $tablet) {
         @content;
     }
 }
+//768px
 @mixin mediaTabletS {
     @media screen and (max-width: $tablet_s) {
         @content;
     }
 }
+//480px
 @mixin mediaMobile {
     @media screen and (max-width: $mobile) {
         @content;
     }
+}
+//360px
+@mixin mediaMobileS {
+    @media screen and (max-width: $mobile_s) {
+        @content;
+    }
+}
+//container
+@mixin container($padding){
+    padding: 0 $padding;
 }

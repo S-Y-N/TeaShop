@@ -6,6 +6,36 @@
     padding: 100px 0;
     display: grid;
     grid-template-columns: 25fr 25fr 50fr;
+    @include mediaTablet{
+        grid-template-columns: 20fr 20fr 60fr;
+    }
+    @include mediaTabletS{
+        padding: 50px 0;
+        grid-template-columns: 25fr 25fr 50fr;
+        gap: 60px;
+    }
+    @include mediaMobile{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 40px;
+    }
+}
+.footer__list{
+    &--first{
+        @include mediaMobile{
+            grid-area: 1 / 1 / 2 / 2;
+        }
+    }
+    &--second{
+        @include mediaMobile{
+            grid-area: 1 / 2 / 2 / 3;
+        }
+    }
+}
+.footer-blocks{
+    @include mediaMobile{
+        grid-area: 2 / 1 / 3 / 3;
+    }
 }
 .footer__list--title {
     margin-bottom: 50px;
@@ -26,6 +56,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+
+    @include mediaTabletS{
+        grid-template-columns: 1fr;
+    }
 }
 .footer-block--text {
     font-size: 16px;
@@ -54,6 +88,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @include mediaTabletS{
+        order: 2;
+    }
 }
 
 .phone_num {

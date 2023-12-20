@@ -1,5 +1,15 @@
 .header {
     padding: 30px 0;
+    @include mediaTabletS{
+        min-height: 165px;
+    }
+    @include mediaMobile{
+        min-height: 80px;
+    }
+    @include mediaMobile{
+        padding: 10px 0;
+        
+    }
 }
 .header__content{
     display: flex;
@@ -7,9 +17,113 @@
     justify-content: space-between;
     align-items: center;
     min-height: 140px;
+    @include mediaTabletS{
+        min-height: 105px;
+    }
+    @include mediaMobile{
+        min-height: 60px;
+    }
+}
+.header__content--mobile{
+    z-index: 8;
+    
+    position: fixed;
+    left: 12vw;
+    top: 0px;
+    width: 76vw;
+    //height: 100%;
+    background-color: white;
+
+    border: 1px solid $blown;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 60px;
+
+    padding-top: 50px;
+    //padding-bottom: 50px;
+    .nav{
+        margin-left: unset;
+    }
+    .logo{
+        display: none;
+    }
+    .header__nav {
+        display: block;
+    }
+    .header__list{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .header__nav-btn{
+        position: fixed;
+        top: 40px;
+        right: 15px;
+    }
+    .header__profile{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .profile__content{
+        width: 100%;
+        padding: 20px 0;
+        background-color: $lightBackground;
+    }
+    .profile__list{
+        justify-content: center;
+        gap: 70px;
+    }
 }
 .logo {
     margin-bottom: 35px;
+    @include mediaTabletS{
+        order: 2;
+        margin-bottom: 0;
+    }
+    --footer{
+        @include mediaTabletS{
+            order: 1;
+        }
+    }
+}
+.logo img{
+     @include mediaMobile{
+        width: 39px;
+        height: 56px;
+    }
+}
+.logo--footer img{
+    width: 57px;
+    height: 91px;
+}
+.nav{
+    @include mediaTablet{
+        display: flex;
+        flex: 1;
+        margin-left: 56px;
+    }
+}
+.header__nav {
+   @include mediaTabletS{
+      display: none;
+   }
+}
+.header__nav-btn{
+    display: none;
+    @include mediaTabletS{
+        display: block;
+        order: 1;
+        min-width:150px;
+    }
+    @include mediaMobileS{
+        display: block;
+        order: 1;
+        min-width:100px;
+    }
 }
 .header__list {
     display: flex;
@@ -20,6 +134,11 @@
 }
 .header__list-item {
     font-size: 18px;   
+}
+.profile__content{
+    @include mediaTabletS{
+        order: 3;
+    }
 }
 .profile__list {
     display: flex;
@@ -32,5 +151,12 @@
 
     &--search{
         margin-left: 80px;
+
+        @include mediaTablet{
+            margin-left: 50px;
+        }
+        @include mediaMobileS{
+            margin-left: unset;
+        }
     }
 }

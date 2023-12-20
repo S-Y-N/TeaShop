@@ -6,6 +6,10 @@
     background-position: bottom;    
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include mediaTabletS{
+        background-position: left;
+    }
 }
 .top__content{
     min-height: 500px;
@@ -15,16 +19,25 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
+    @include mediaMobileS{
+        min-height: 360px;
+    }
 }
 .top__title {
     font-size: 60px;
     max-width: 780px;
     margin-bottom: 20px;
     line-height: 1;
+    @include mediaMobile{
+        font-size: 40px;
+    }
+    @include mediaMobileS{
+        font-size: 24px;
+    }
 
 }
 .top__text {
-    font-size: 24px;
+    font-size: clamp(0.875rem, 0.607rem + 1.19vw, 1.5rem);
     max-width: 560px;
     margin-bottom: 50px;
 }

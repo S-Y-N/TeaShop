@@ -1,10 +1,32 @@
 .collection {
     margin-bottom: 150px;
+    @include mediaTablet{
+        margin-bottom: 120px;
+    } @include mediaTablet{
+        margin-bottom: 60px;
+    }
+    @include mediaMobile{
+        margin-bottom: 50px;
+    }
 }
 .explore__cards {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
+    @include mediaTablet{
+        gap: 20px;
+    }
+     @include mediaTabletS{
+        flex-wrap: wrap;
+        gap: 6px 0;
+    }
+}
+.explore__card img{
+    @include mediaMobileS{
+        max-width: 150px;
+        height: auto;
+    }
 }
 
 .explore__card-img {

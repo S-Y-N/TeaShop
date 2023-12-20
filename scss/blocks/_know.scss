@@ -5,17 +5,42 @@
     background-size: 40%;
     background-position: right center;
     margin-bottom: 150px;
+    @include mediaTablet{
+        margin-bottom: 120px;
+    }
 }
 .know-more__content {
     padding: 100px 0;
+    @include mediaTablet{
+        padding: 60px 0;
+    }
+    @include mediaMobile{
+        padding: 50px 0;
+    }
 }
 
 .know-mote__blocks {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 40px;
+    @include mediaTablet{
+        grid-template-columns: 1fr;
+        gap: 60px;
+        justify-items: center;
+    }
+}
+.know-more--block{
+    @include mediaTablet{
+        max-width: 780px;
+    }
+}
+.spam{
+    @include mediaTablet{
+        max-width: 580px;
+    }
 }
 .know-more--text {
+    font-size: clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem);
     font-weight: 300;
     line-height: 30px;
 }

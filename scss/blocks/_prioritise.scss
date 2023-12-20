@@ -1,11 +1,26 @@
 .prioritise {
     margin-bottom: 150px;
+    @include mediaTablet{
+        margin-bottom: 120px;
+    }
+    @include mediaMobile{
+        margin-bottom: 60px;
+    }
+    @include mediaMobileS{
+        margin-bottom: 50px;
+    }
 }
 
 .prior__cards {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 48px;
+    @include mediaTablet{
+        grid-template-columns: repeat(2,1fr);
+    }
+    @include mediaMobile{
+        grid-template-columns:1fr;
+    }
 }
 .prior__card {
     display: flex;
@@ -17,11 +32,18 @@
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 10px;
+    text-align: center;
+
+    @include mediaMobileS{
+        font-size: 20px;
+    }
 }
 .prior__text {
     font-weight: 600;
     margin-bottom: 40px;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
-    white-space:nowrap;
+    @include mediaMobileS{
+        font-size: 14px;
+    }
 }

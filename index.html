@@ -14,16 +14,22 @@
                <a href="#" class="logo">
                     <img src="./img/logo_tea.svg" alt="">
                </a>
-            
-                <nav class="nav">
-                    <ul class="header__list">
-                        <li class="header__list-item"><a href="" class="header__item-link">Black</a></li>
-                        <li class="header__list-item"><a href="" class="header__item-link">Green</a></li>
-                        <li class="header__list-item"><a href="" class="header__item-link">White</a></li>
-                        <li class="header__list-item"><a href="" class="header__item-link">Oolong</a></li>
-                        <li class="header__list-item"><a href="" class="header__item-link">Pu-erh</a></li>
-                    </ul>
-                </nav>
+               <div class="header__nav">
+                    <nav class="nav">
+                        <ul class="header__list">
+                            <li class="header__list-item"><a href="" class="header__item-link">Black</a></li>
+                            <li class="header__list-item"><a href="" class="header__item-link">Green</a></li>
+                            <li class="header__list-item"><a href="" class="header__item-link">White</a></li>
+                            <li class="header__list-item"><a href="" class="header__item-link">Oolong</a></li>
+                            <li class="header__list-item"><a href="" class="header__item-link">Pu-erh</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__nav-btn">
+                    <button class="nav-icon-btn">
+                        <div class="nav-icon"></div>
+                    </button>
+                </div>
                
                 <div class="profile__content">
                     <ul class="profile__list">
@@ -63,10 +69,10 @@
                 "Tea is not just a drink, it's a way of life and a way to connect with our loved ones."
             </p>
         </blockquote>
-        <section class="collection">
+        <section class="collection none">
             <div class="container">
                 <div class="explore__content">
-                    <h2 class="title">
+                    <h2 class="title title--collection">
                         Explore our Collections
                     </h2>
                     <div class="explore__cards">
@@ -94,7 +100,7 @@
                 </div>
             </div>
         </section>
-        <section class="clients">
+        <section class="clients none">
             <div class="container">
                 <div class="client__content">
                     <h3 class="title">
@@ -129,7 +135,7 @@
                 </div>
             </div>
         </section>
-        <section class="blog">
+        <section class="blog none">
             <div class="container">
                 <div class="blog__content">
                     <h2 class="title">Our Tea Blog</h2>
@@ -173,7 +179,7 @@
                 </div>
             </div>
         </section>
-        <section class="know-more">
+        <section class="know-more none">
             <div class="container">
                 <div class="know-more__content">
                     <div class="title title--know">Want to know more?</div>
@@ -210,17 +216,17 @@
                         <div class="prior__card">
                             <h4 class="prior__title">Only Loose leaf tea</h4> 
                             <p class="prior__text">Best Drinking Experience</p>
-                            <img src="./img/prio1.svg" alt="" class="prior__img">
+                            <img src="./img/prio2.svg" alt="" class="prior__img">
                         </div>
                         <div class="prior__card">
                             <h4 class="prior__title">Customer support</h4> 
                             <p class="prior__text">No bots, no automated replies</p>
-                            <img src="./img/prio1.svg" alt="" class="prior__img">
+                            <img src="./img/prio3.svg" alt="" class="prior__img">
                         </div>
                         <div class="prior__card">
                             <h4 class="prior__title">Fast shipping</h4> 
                             <p class="prior__text">Save, Convenient, Reliable</p>
-                            <img src="./img/prio1.svg" alt="" class="prior__img">
+                            <img src="./img/prio4.svg" alt="" class="prior__img">
                         </div>                  
                     </div>
                 </div>
@@ -230,7 +236,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
-                <ul class="footer__list">
+                <ul class="footer__list footer__list--first">
                     <p class="footer__list--title">Products</p>
                     <li class="footer__list-item"><a href="#" class="footer__list-link">Black tea</a></li>
                     <li class="footer__list-item"><a href="#" class="footer__list-link">Green tea</a></li>
@@ -238,7 +244,7 @@
                     <li class="footer__list-item"><a href="#" class="footer__list-link">Oolong tea</a></li>
                     <li class="footer__list-item"><a href="#" class="footer__list-link">Pu-erh tea</a></li>
                 </ul>
-                <ul class="footer__list">
+                <ul class="footer__list footer__list--second">
                     <p class="footer__list--title">Company</p>
                     <li class="footer__list-item"><a href="#" class="footer__list-link">About Us</a></li>
                     <li class="footer__list-item"><a href="#" class="footer__list-link">Contact Us</a></li>
@@ -263,26 +269,28 @@
                         <p class="footer-block--text footer-block--text--reg">
                             Please feel free to contact us via the email of phone. We would be happy to hear from you!
                         </p>
-                        <div class="footer-block--contact">
-                            <a href="#" class="logo">
-                                <img src="./img/logo_tea.svg" alt="">
-                           </a>
-                           <div class="contacts">
-                                <a href="tel:+380677772233" class="phone_num">
-                                    <img src="./img/icons/call.png" alt="">
-                                    <span class="phone_num--text">+380677772233</span>
-                                </a>
-                                <a href="mailto:info@tea.com" class="phone_num">
-                                    <img src="./img/icons/mail.png" alt="">
-                                    <span class="phone_num--text">info@tea.com</span>
-                                </a>
-                           </div>
-                        </div>
-                        <ul class="socials">
-                            <li class="social-item"><a href="" class="social__link"><img src="./img/icons/fb1.svg" alt="" class="social__img"></a></li>
-                            <li class="social-item"><a href="" class="social__link"><img src="./img/icons/youtube.svg" alt="" class="social__img"></a></li>
-                            <li class="social-item"><a href="" class="social__link"><img src="./img/icons/instagram.svg" alt="" class="social__img"></a></li>
-                            <li class="social-item"><a href="" class="social__link"><img src="./img/icons/twitter.svg" alt="" class="social__img"></a></li>
+                        <div class="footer-block-wrap">
+                            <div class="footer-block--contact">
+                                <a href="#" class="logo logo--footer">
+                                    <img src="./img/logo_tea.svg" alt="">
+                            </a>
+                            <div class="contacts">
+                                    <a href="tel:+380677772233" class="phone_num">
+                                        <img src="./img/icons/call.png" alt="">
+                                        <span class="phone_num--text">+380677772233</span>
+                                    </a>
+                                    <a href="mailto:info@tea.com" class="phone_num">
+                                        <img src="./img/icons/mail.png" alt="">
+                                        <span class="phone_num--text">info@tea.com</span>
+                                    </a>
+                            </div>
+                            </div>
+                            <ul class="socials">
+                                <li class="social-item"><a href="" class="social__link"><img src="./img/icons/fb1.svg" alt="" class="social__img"></a></li>
+                                <li class="social-item"><a href="" class="social__link"><img src="./img/icons/youtube.svg" alt="" class="social__img"></a></li>
+                                <li class="social-item"><a href="" class="social__link"><img src="./img/icons/instagram.svg" alt="" class="social__img"></a></li>
+                                <li class="social-item"><a href="" class="social__link"><img src="./img/icons/twitter.svg" alt="" class="social__img"></a></li>
+                            </div>
                         </div>
                     </div>
                    </div>
@@ -303,5 +311,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/jquery/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
