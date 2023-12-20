@@ -4,9 +4,21 @@
         @content;
     }
 }
+//820px
+@mixin mediaTabletM {
+    @media screen and (max-width: $tablet_m) {
+        @content;
+    }
+}
 //768px
 @mixin mediaTabletS {
     @media screen and (max-width: $tablet_s) {
+        @content;
+    }
+}
+//560px
+@mixin mediaMobileL {
+    @media screen and (max-width: $mobile_l) {
         @content;
     }
 }

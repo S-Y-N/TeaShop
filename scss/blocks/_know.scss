@@ -8,6 +8,12 @@
     @include mediaTablet{
         margin-bottom: 120px;
     }
+    @include mediaTabletS{
+        margin-bottom: 60px;
+    }
+    @include mediaMobile{
+        margin-bottom: 50px;
+    }
 }
 .know-more__content {
     padding: 100px 0;

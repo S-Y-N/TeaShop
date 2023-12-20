@@ -119,6 +119,11 @@
         order: 1;
         min-width:150px;
     }
+    @include mediaMobileL{
+        display: block;
+        order: 1;
+        min-width:100px;
+    }
     @include mediaMobileS{
         display: block;
         order: 1;
@@ -131,6 +136,10 @@
     justify-content: center;
     align-items: center;
     gap: 65px;
+
+    @include mediaTabletM{
+        gap:40px;
+    }
 }
 .header__list-item {
     font-size: 18px;   
@@ -148,15 +157,21 @@
     gap: 20px;
 }
 .profile__item {
-
+    @include mediaTablet{
+        &--basket{
+            order: 2;
+        }
+        &--profile{
+            order: 3;
+        }
+    }
+   
     &--search{
         margin-left: 80px;
-
+        order: 1;
         @include mediaTablet{
-            margin-left: 50px;
-        }
-        @include mediaMobileS{
             margin-left: unset;
         }
+       
     }
 }

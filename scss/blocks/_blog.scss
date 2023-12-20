@@ -15,7 +15,9 @@
     grid-template-columns: repeat(2,1fr);
     gap: 40px 60px;
     margin-bottom: 60px;
-
+    @include mediaTabletM{
+        grid-template-columns: 1fr;
+    }
     @include mediaTablet{
         gap: 60px 20px;
     }
@@ -46,7 +48,7 @@
     @include mediaTabletS{
         margin-left: 98px;
     }
-    @include mediaMobile{
+    @include mediaMobileL{
         margin-left: unset;
     }
     @include mediaMobile{
@@ -88,11 +90,17 @@
     margin-bottom: 10px;
     font-family: $font-second;
     font-size: 24px;
+    @include mediaMobile{
+        font-size: 20px;
+    }
 }
 .blog__card--author {
     margin-bottom: 50px;
     font-size: 13px;
     font-weight: 300;
+    @include mediaMobile{
+        margin-bottom: 30px;
+    }
     @include mediaMobileS{
         margin-bottom: 10px;
     }
